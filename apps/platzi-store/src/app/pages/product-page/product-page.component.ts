@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Product } from '@features/products/domain/models/product.model';
 import { Observable, combineLatest, filter, map, switchMap } from 'rxjs';
-import { ProductService } from '@features/products/application/usecases/product.service';
 import { ActivatedRoute } from '@angular/router';
-import { withCompletionStatus } from '@core/utils/rxjs-utils';
+import { Product } from '../../features/products/domain/models/product.model';
+import { ProductService } from '../../features/products/application/usecases/product.service';
+import { withCompletionStatus } from '../../core/utils/rxjs-utils';
 
 interface VM {
   product: {
@@ -14,7 +14,7 @@ interface VM {
 }
 
 @Component({
-  selector: 'ps-product-page',
+  selector: 'platzi-product-page',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './product-page.component.html',

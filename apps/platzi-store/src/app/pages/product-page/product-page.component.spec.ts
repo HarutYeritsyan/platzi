@@ -1,11 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProductPageComponent } from './product-page.component';
-import { ProductService } from '@features/products/application/usecases/product.service';
 
-import { createSpyFromClass } from 'jasmine-auto-spies';
+import { createSpyFromClass } from 'jest-auto-spies';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
 import { of } from 'rxjs';
+import { ProductService } from '../../features/products/application/usecases/product.service';
 
 describe('ProductPageComponent', () => {
   let component: ProductPageComponent;
