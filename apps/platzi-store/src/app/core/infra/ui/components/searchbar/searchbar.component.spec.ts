@@ -19,9 +19,9 @@ describe('SearchbarComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should emit a search event on click on search button');
+  it.todo('should emit a search event on click on search button');
 
-  it('should emit a search event on click on enter key');
+  it.todo('should emit a search event on click on enter key');
 
-  it('should have its value synced with ngModel binded value');
+  it.todo('should have its value synced with ngModel binded value');
 });
